@@ -1,5 +1,5 @@
 # Interactive-Quiz
-This is a quiz focusing on JavaScript fundamentals. It includes multiple choice and true and false questions as well as a timer and score keeper.
+This is a quiz focusing on the DDC, Dewey Decimal Classification. It will include questions related to call numbers and topics in the DDC as well as the person who created the DDC system. The format includes multiple choice and true and false questions as well as a timer and score keeper.
 /*Ideas for how to make the quiz - what pieces do I need to make:
 1. I need to make a timer with a start button. 
 2. The button should trigger two events
