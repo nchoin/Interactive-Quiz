@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Comic Sans", Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 /* colors for the website*/
 :root {
@@ -19,4 +19,96 @@
 
 body{
    background-color: var(--grey); 
+}
+
+header {
+    position:absolute;
+    top: 25%;
+    left:35%;
+    padding: 5px;
+}
+
+.buttonStart {
+    background-color: var(--dkblue);
+    color: var(--white);
+    width: 125px;
+    height:35px;
+    padding: 5px;
+    border-radius: 10%;
+    font-size: 1.2em;
+    border: 2px solid var(--turquoise);
+    cursor: pointer;
+    }
+    .buttonInfo{
+    background-color: var(--white);
+    color: var(--dkblue);
+    width: 125px;
+    height:35px;
+    padding: 5px;
+    border-radius: 10%;
+    font-size: 1.2em;
+    border: 2px solid var(--turquoise);
+    cursor: pointer;
+    
+    }
+    .buttonStart:hover {
+    background-color: var(--ltblue);
+    color: var(--dkblue);
+    width: 125px;
+    height:35px;
+    padding: 5px;
+    border-radius: 10%;
+    font-size: 1.2em;
+    border: 2px solid var(--turquoise);
+    }
+    .buttonInfo:hover {
+    background-color: var(--midnight);
+    color: var(--white);
+    width: 125px;
+    height:35px;
+    padding: 5px;
+    border-radius: 10%;
+    font-size: 1.2em;
+    border: 2px solid var(--turquoise);
+    }
+    
+
+.infoTitle {
+    background-color: var(--white);
+    color: var(--turquoise);
+    height: 50px;
+    padding: 15px;
+    padding-left: 20px;
+    font-size: 1.5em;
+    width: 500px;
+    /* box-shadow: 5px 10px (var(--turquoise)); */
+    border-bottom: 5px solid var(--turquoise);
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+.infoRules {
+    background-color: var(--white);
+    padding: 5px;
+    color: var(--turquoise);
+    width: 500px;
+    margin-top:10px;
+    border-radius: 15px;
+
+}
+.exit {
+    background-color: var(--dkblue);
+    color: var(--white);
+    width: 125px;
+    height:35px;
+    padding: 5px;
+    border-radius: 10%;
+    font-size: .9em;
+    border: 2px solid var(--turquoise);
+    cursor: pointer;
+    position:;
+    }
+
+li .question {
+    list-style-image: none;
 }

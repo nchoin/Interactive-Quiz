@@ -33,6 +33,6 @@ This is a quiz focusing on the DDC, Dewey Decimal Classification. It will includ
 6. Variables names I could use:
     global  - var questionAnswerArr = [];
 
-
+Link for learning about DDC my google slide show  https://docs.google.com/presentation/d/e/2PACX-1vQDVLsZ5GXjLYOfI8kSwdE_jtaX742SK6SnYgTbyk01U9yH8r0gquwE3PB5UPb_ey62tIL9ZwdbYQN5/pub?start=false&loop=true&delayms=15000
     
    
