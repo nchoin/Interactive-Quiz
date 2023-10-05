@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* colors for the website*/
+:root {
+    --dkblue:#2f6d80;
+    --grey:#E1E7E0;
+    --turquoise:#6aa4b0;
+    --white:#FEFAF1;
+    --midnight: #2b4560;
+    --ltblue:#DBF5F0;
+    --lemon:#F1DA8E;
+    --yellow: #FFF4BD;
+}
+
+body{
+   background-color: var(--grey); 
+}

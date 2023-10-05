@@ -7,10 +7,13 @@ This is a quiz focusing on the DDC, Dewey Decimal Classification. It will includ
     b. the "unveiling" of the first question and answer set
 
 3. Need to create a set of questions/answers. 
-    a. Was thinking I could give the Q/A a class so I could then create a variable named questionAnswerArr. 
-    b. if all the QA are in an array then I could create a for loop for each index to be visible and the rest hidden. for(var i = 0; i < questionAnswerArr.length; i++) {
-  
-  }
+    a. Was thinking I could give the Q/A a class so I could then create a variable named questionAnswerArr[]. Within this array, I would have an object {}for each "collection" of questions/options[]/correct choice.
+    b. if all the QA are in an array then I could create a for loop for each index to be visible and the rest hidden. Connect this to a continue or next button 
+        for(var i = 0; i < questionAnswerArr.length; i++) {
+            blah blah something...
+            } else {
+                confirm(You're done)
+        }
     c. I could set the length of the for loop to be questionAnswerArr.length 
     d. Would I then be able to apply a Math.random for the Q/A to go in random order?
     e. was thinking each Q/A would be its own UL with the question being a li and each answer an li.
