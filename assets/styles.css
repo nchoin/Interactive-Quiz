@@ -17,19 +17,33 @@
     --green:#18A558;
 }
 
-body{
-    background-color: var(--grey); 
-
+/* body{
+    background-color: var(--grey);  
+    margin-top: 25%;
+    margin-bottom: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+ }  */
+body.myGrid {
+    display: grid;
+    grid-template-columns: 250px auto auto 250px;
+    grid-template-rows: 100px auto auto 100px;
 }
-
-header.start {
-    position:absolute;
+header {
+    /* position:absolute; 
     top: 25%;
-    left:35%;
-    padding: 5px;
+    left:35%; */
+    padding: 5px; 
+    /* display: none; */
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row: 1;
+    
 }
 
-.buttonStart {
+button.buttonStart {
     background-color: var(--dkblue);
     color: var(--white);
     width: 125px;
@@ -39,6 +53,7 @@ header.start {
     font-size: 1.2em;
     border: 2px solid var(--turquoise);
     cursor: pointer;
+    
     }
     .buttonInfo{
     background-color: var(--white);
@@ -50,8 +65,8 @@ header.start {
     font-size: 1.2em;
     border: 2px solid var(--turquoise);
     cursor: pointer;
-    
     }
+
     .buttonStart:hover {
     background-color: var(--ltblue);
     color: var(--dkblue);
@@ -73,7 +88,12 @@ header.start {
     border: 2px solid var(--turquoise);
     }
     
-
+.infoBox {
+    /* display: none; */
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+}
 .infoTitle {
     background-color: var(--white);
     color: var(--turquoise);
@@ -93,6 +113,7 @@ header.start {
     padding: 5px;
     color: var(--turquoise);
     width: 600px;
+    height: 40px;
     margin-top:10px;
     box-shadow: 3px 3px var(--turquoise);
     border-radius: 15px;
@@ -121,7 +142,12 @@ header.start {
     cursor: pointer;
     }
 
-
+.quizFrame {
+    display:none;
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+}
 .quizTitle {
     background-color: var(--midnight);
     color: var(--white);
@@ -149,7 +175,7 @@ header.start {
     padding:5px;
     border-radius: 10px;
 }
-/* This is the style information for the questios and answers. Need to figure out how to denote the correct answer when clicked - how to turn it green. Can I connect JS to CSS */
+/* This is the style information for the questions and answers. Need to figure out how to denote the correct answer when clicked - how to turn it green. Can I connect JS to CSS */
 
 .question {
     background-color: var(--ltblue);
@@ -192,20 +218,24 @@ li .question {
     list-style-image: none;
 }
 /* the counter and button for next question Style. need to add positions but not sure how to do that yet */
-.counter {
+footer {
+    grid-column: 2;
+    grid-row: 3;
+}
+.tallyCorrect {
     width: 250px;
     height: 75px;
     background-color: var(--green);
     margin: 20px 0px;
     border-radius: 10px;
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: var(--white);
-    text-align: center;
-    padding: 18px 0px;
+    text-align: left;
+    padding: 10px 0px;
+   
 }
 
-
-.nextButton{
+.nextButton {
     background-color: var(--midnight);
     color: var(--white);
     width: 150px;
@@ -216,21 +246,27 @@ li .question {
     border: 2px solid var(--turquoise);
     cursor:pointer;
     margin:5px 0px;
-
+    
     }
-.nextButton:hover{
+
+.nextButton:hover {
     background-color: var(--white);
     color: var(--midnight);
-    width: 125px;
+    /* width: 125px;
     height:35px;
     padding: 5px;
     border-radius: 10px;
     font-size: 1.2em;
     border: 2px solid var(--turquoise);
-    cursor: pointer;
+    cursor: pointer; */
     }
 
 /* Buttons designs try again and learning more about DDC. Matched the colors for similar buttons at the start */
+div.theEndButtons {
+    grid-column: 3;
+    grid-row: 3;
+}
+
 .redo {
     background-color: var(--dkblue);
     color: var(--white);
@@ -242,6 +278,7 @@ li .question {
     border: 2px solid var(--turquoise);
     cursor: pointer;
     }
+
 .redo:hover {
     background-color: var(--ltblue);
     color: var(--dkblue);
@@ -251,11 +288,12 @@ li .question {
     border-radius: 10px;
     font-size: 1.2em;
     border: 2px solid var(--turquoise);
-    }    
+    }   
+
 .quit{
     background-color: var(--white);
     color: var(--midnight);
-    width: 325px;
+    width: auto;
     height:35px;
     padding: 5px;
     border-radius: 10px;
@@ -268,12 +306,12 @@ li .question {
 .quit:hover {
     background-color: var(--midnight);
     color: var(--white);
-    width: 325px;
+    /* width: auto;
     height:35px;
     padding: 5px;
     border-radius: 10px;
     font-size: 1.2em;
-    border: 2px solid var(--turquoise);
+    border: 2px solid var(--turquoise); */
     }
 a:link, a:visited {
     background-color: var(--white);

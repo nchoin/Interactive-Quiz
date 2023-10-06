@@ -6,15 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles.css">
 </head>
-<body>
+<body class="myGrid">
     <!-- start the quiz with a button and offer a button for information-->
     <header class="start">
         <button class="buttonStart">Start Quiz</button>
         <button class="buttonInfo">Info</button>
     </header>
 
-    <!--Infor box which will display/onclick,-->
-    <section class="infoBox"></section>
+    <!--Info box which will display/onclick,-->
+    <section class="infoBox">
         <div class="infoTitle">Information about this Quiz</div>
         <div class="infoList">
             <li class="infoRules">This quiz is all about the Dewey Decimal Classifiction (DDC) System. </li>
@@ -27,15 +27,15 @@
         </div>
         <div class="infoButtons"></div>
             <button class="exit">Continue to Quiz</button> 
-
+    </section> 
 <!--Creating a section to contiain the quiz box which will have the Title of the quiz, the timer, the question/answer choices, a counter for correct answers and a button to navigate to next question -->
-    <section class="quizFrame"></section>
-        <header>
-            <div class="quizTitle">Do You Know Dewey?</div>
+    <section class="quizFrame">
+    
+        <div class="quizTitle">Do You Know Dewey?</div>
             <!-- <div class="timeInfo"></div>
                 <div class="timeLeft">Time Left</div>
-                <div class="timer"></div>
-        </header> -->
+                <div class="timer"></div> -->
+    
 <!--this is where the question and answer will appear-->
         <div class="question">This is where the question from JS will go.</div>
         <ul>
@@ -44,16 +44,17 @@
             <div class="answerChoices">This is where answer choices will be listed</div>
             <div class="answerChoices">This is where answer choices will be listed</div>
         </ul>
-
+    </section>
 <!--This is where the counter and button for next question will go-->
         <footer class="resultsNext">
-            <div class="counter">counter of results</div>
+            <div class="tallyCorrect">Correct Responses</div>
             <button class="nextButton">Next question</button>
         </footer>
 <!--Will try to create a box to show when done-->
-        <div class="theEndButtons"></div>   
+        <div class="theEndButtons">
             <button class="redo">Try Again</button>
-            <button class="quit"> <a href="https://docs.google.com/presentation/d/e/2PACX-1vQDVLsZ5GXjLYOfI8kSwdE_jtaX742SK6SnYgTbyk01U9yH8r0gquwE3PB5UPb_ey62tIL9ZwdbYQN5/pub?start=false&loop=true&delayms=15000" target="_blank">Get more info about the DDC</a></button>
+            <button class="quit"> <a href="https://docs.google.com/presentation/d/e/2PACX-1vQDVLsZ5GXjLYOfI8kSwdE_jtaX742SK6SnYgTbyk01U9yH8r0gquwE3PB5UPb_ey62tIL9ZwdbYQN5/pub?start=false&loop=true&delayms=15000" target="_blank">Info about the DDC</a></button>
+        </div>   
 
 
 
