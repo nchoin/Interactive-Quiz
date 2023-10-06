@@ -14,14 +14,15 @@
     --ltblue:#DBF5F0;
     --lemon:#F1DA8E;
     --yellow: #FFF4BD;
-    --green:#C8DF52;
+    --green:#18A558;
 }
 
 body{
-   background-color: var(--grey); 
+    background-color: var(--grey); 
+
 }
 
-header {
+header.start {
     position:absolute;
     top: 25%;
     left:35%;
@@ -80,10 +81,10 @@ header {
     padding: 15px;
     padding-left: 20px;
     font-size: 1.5em;
-    width: 500px;
-    /* box-shadow: 5px 10px (var(--turquoise)); */
-    border-bottom: 5px solid var(--turquoise);
-    margin-bottom: 5px;
+    width: 600px;
+    box-shadow: 5px 10px var(--turquoise);
+    /* border-bottom: 5px solid var(--turquoise); */
+    margin-bottom: 15px;
     border-radius: 15px;
 }
 
@@ -91,8 +92,9 @@ header {
     background-color: var(--white);
     padding: 5px;
     color: var(--turquoise);
-    width: 500px;
+    width: 600px;
     margin-top:10px;
+    box-shadow: 3px 3px var(--turquoise);
     border-radius: 15px;
 
 }
@@ -106,9 +108,180 @@ header {
     font-size: .9em;
     border: 2px solid var(--turquoise);
     cursor: pointer;
-    position:;
+    }
+.exit:hover {
+    background-color: var(--white);
+    color: var(--dkblue);
+    width: 125px;
+    height:35px;
+    padding: 5px;
+    border-radius: 10%;
+    font-size: .9em;
+    border: 2px solid var(--turquoise);
+    cursor: pointer;
     }
 
+
+.quizTitle {
+    background-color: var(--midnight);
+    color: var(--white);
+    padding:20px;
+    font-size: 1.8em;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 5px 5px var(--turquoise);
+    margin-bottom: 10px;
+}
+.timeLeft {
+    background-color: var(--white);
+    color: var(--dkblue);
+    width: 175px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.timer {
+    background-color: var(--midnight);
+    color: var(--white);
+    font-weight: bolder;
+    width: 50px;
+    padding:5px;
+    border-radius: 10px;
+}
+/* This is the style information for the questios and answers. Need to figure out how to denote the correct answer when clicked - how to turn it green. Can I connect JS to CSS */
+
+.question {
+    background-color: var(--ltblue);
+    padding:15px 5px;
+    color: var(--midnight);
+    width: 500px;
+    height: 50px;
+    margin:10px 0;
+    border-radius: 15px;
+    vertical-align: sub;
+    box-shadow: 3px 3px var(--dkblue);
+    font-weight: bolder;
+
+}
+.answerChoices {
+    background-color: var(--white);
+    padding:15px 5px;
+    color: var(--midnight);
+    width: 500px;
+    height: 50px;
+    margin:10px 15px;
+    border-radius: 15px;
+    vertical-align: sub;
+    box-shadow: 3px 3px var(--dkblue);
+    cursor: pointer;
+
+}
+.answerChoices:hover {
+    background-color: var(--lemon);
+    color: var(--midnight);
+    /* width: 500px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 15px;
+    vertical-align: sub;
+    box-shadow: 2px 2px var(--dkblue); */
+    cursor: pointer;
+}
 li .question {
     list-style-image: none;
+}
+/* the counter and button for next question Style. need to add positions but not sure how to do that yet */
+.counter {
+    width: 250px;
+    height: 75px;
+    background-color: var(--green);
+    margin: 20px 0px;
+    border-radius: 10px;
+    font-size: 1.8em;
+    color: var(--white);
+    text-align: center;
+    padding: 18px 0px;
+}
+
+
+.nextButton{
+    background-color: var(--midnight);
+    color: var(--white);
+    width: 150px;
+    height:35px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 2px solid var(--turquoise);
+    cursor:pointer;
+    margin:5px 0px;
+
+    }
+.nextButton:hover{
+    background-color: var(--white);
+    color: var(--midnight);
+    width: 125px;
+    height:35px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 2px solid var(--turquoise);
+    cursor: pointer;
+    }
+
+/* Buttons designs try again and learning more about DDC. Matched the colors for similar buttons at the start */
+.redo {
+    background-color: var(--dkblue);
+    color: var(--white);
+    width: 150px;
+    height:35px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 2px solid var(--turquoise);
+    cursor: pointer;
+    }
+.redo:hover {
+    background-color: var(--ltblue);
+    color: var(--dkblue);
+    width: 150px;
+    height:35px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 2px solid var(--turquoise);
+    }    
+.quit{
+    background-color: var(--white);
+    color: var(--midnight);
+    width: 325px;
+    height:35px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 2px solid var(--turquoise);
+    cursor: pointer;
+    text-decoration: none;
+    }
+
+.quit:hover {
+    background-color: var(--midnight);
+    color: var(--white);
+    width: 325px;
+    height:35px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 2px solid var(--turquoise);
+    }
+a:link, a:visited {
+    background-color: var(--white);
+    color: var(--midnight);
+    text-decoration: none;
+}
+a:hover {
+    background-color: var(--midnight);
+    color: var(--white);
+    text-decoration: none;
 }
