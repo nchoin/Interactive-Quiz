@@ -270,7 +270,7 @@ button.buttonStart {
 /* Buttons designs try again and learning more about DDC. Matched the colors for similar buttons at the start */
 
 .stats {
-    display:show;
+    display:none;
 }
 .gameOverMessage{
     background-color: var(--midnight);
