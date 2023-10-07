@@ -40,54 +40,76 @@ var statsAppear = document.getElementsByClassName("stats");
 var headerAppear = document.getElementsByClassName("start");
 var infoAppear = document.getElementsByClassName("infoBox");
 
+// var displaySettingStats = statsAppear.style.display;
+// var displaySettingHeader = headerAppear.style.display;
+// var displaySettingInfo = infoAppear.style.display;
+
 function showQuiz() {
-    if(quizAppear.style.display ==='none') {
-      quizAppear.style.display='show';
+    var displaySettingQuiz = quizAppear.style.display;
+    var displaySettingTally = tallyBoxAppear.style.display;
+
+    if(displaySettingQuiz == 'none') {
+      displaySettingQuiz = 'block';
     }
-    if(tallyBoxAppear.style.display === "none") {
-        tallyBoxAppear.style.display="show";
+    if(displaySettingTally == 'none') {
+        displaySettingTally = 'block';
     }
 }
 
 function hideQuiz() {
-    if(quizAppear.style.display ==='show') {
-        quizAppear.style.display='none';
+    var displaySettingQuiz = quizAppear.style.display;
+    var displaySettingTally = tallyBoxAppear.style.display;
+
+    if(displaySettingQuiz =='block') {
+        displaySettingQuiz ='none';
       }
-    if(tallyBoxAppear.style.display === "show") {
-          tallyBoxAppear.style.display="none";
+    if(displaySettingTally == 'block') {
+        displaySettingTally = 'none';
       }
 }
 
 function showStats(){
-    if(statsAppear.style.display ==='none') {
-        statsAppear.style.display='show';
+    var displaySettingStats = statsAppear.style.display;
+    var displaySettingTally = tallyBoxAppear.style.display;
+
+    if(displaySettingStats =='none') {
+        displaySettingStats = 'block';
     }
-    if(tallyBoxAppear.style.display === "none") {
-        tallyBoxAppear.style.display="show";
+    if(displaySettingTally == 'none') {
+        displaySettingTally = 'block';
     }
 }
 function hideStats(){
-    if(statsAppear.style.display ==='show') {
-        statsAppear.style.display='none';
+    var displaySettingStats = statsAppear.style.display;
+    var displaySettingTally = tallyBoxAppear.style.display;
+
+    if(displaySettingStats =='block') {
+        displaySettingStats = 'none';
     }
-    if(tallyBoxAppear.style.display === "show") {
-        tallyBoxAppear.style.display="none";
+    if(displaySettingTally == 'block') {
+        displaySettingTally = 'none';
     }
 }
 function showInfo(){
-    if(headerAppear.style.display ==='none') {
-        headerAppear.style.display='show';
+    var displaySettingHeader = headerAppear.style.display;
+    var displaySettingInfo = infoAppear.style.display;
+
+    if(displaySettingHeader =='none') {
+        displaySettingHeader ='block';
     }
-    if(infoAppear.style.display === "none") {
-        infoAppear.style.display="show";
+    if(displaySettingInfo == 'none') {
+        displaySettingInfo = 'block';
     }
 }
 function hideInfo(){
-    if(headerAppear.style.display ==='show') {
-        headerAppear.style.display='none';
+    var displaySettingHeader = headerAppear.style.display;
+    var displaySettingInfo = infoAppear.style.display;
+
+    if(displaySettingHeader =='block') {
+        displaySettingHeader ='none';
     }
-    if(infoAppear.style.display === "show") {
-        infoAppear.style.display="none";
+    if(displaySettingInfo == 'block') {
+        displaySettingInfo = 'none';
     }
 }
 

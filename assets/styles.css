@@ -26,12 +26,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
  } 
-/* body.myGrid {
-    display: grid;
-    grid-template-columns: 250px auto 250px;
-    grid-template-rows: 100px auto 100px;
-} */
-
+/* Styles for the begining of the quiz - information */
 header {
     padding: 5px; 
     display: show;
@@ -98,7 +93,7 @@ button.quiz {
     }
 
 .infoBox {
-    display: show;
+    display: block;
     /* grid-column-start: 2;
     grid-column-end: span 2;
     grid-row-start: 2;  */
@@ -128,13 +123,12 @@ button.quiz {
     border-radius: 15px;
     font-size: 1.5em ;
 }
+/* Styles for the beginning of the quiz page */
 
 .quizFrame {
-    display:none;
-    /* grid-column-start: 2;
-    grid-column-end: span 2;
-    grid-row-start: 2; */
+    display: none;
 }
+
 button.buttonStart {
     background-color: var(--dkblue);
     color: var(--white);
@@ -240,7 +234,7 @@ button.buttonStart {
     border: 2px solid var(--turquoise);
     cursor:pointer;
     margin:5px 0px;
-    display: show;
+
     }
 
 .nextButton:hover {
@@ -264,10 +258,10 @@ button.buttonStart {
         color: var(--white);
         text-align: left;
         padding: 10px 0px;
-        display: show;
+        display: none;
        
     }
-/* Buttons designs try again and learning more about DDC. Matched the colors for similar buttons at the start */
+/* Styles for the end - stats from the quiz and opportunity to post to record of results */
 
 .stats {
     display:none;
