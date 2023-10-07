@@ -1,7 +1,7 @@
 # Interactive-Quiz
 This is a quiz focusing on the DDC, Dewey Decimal Classification. It will include questions related to call numbers and topics in the DDC as well as the person who created the DDC system. The format includes multiple choice and true and false questions as well as a timer and score keeper.
 /*Ideas for how to make the quiz - what pieces do I need to make:
-1. I need to make a timer with a start button. 
+1. I need to make a timer with a start button. My timer starts when page loads and I need it to start with button...How do I do this?
 2. The button should trigger two events
     a. the timer to begin
     b. the "unveiling" of the first question and answer set
