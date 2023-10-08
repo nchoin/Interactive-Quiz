@@ -35,11 +35,18 @@ Everthing on the initial page should switch to display None and the following sh
 //Function to make quiz frame and timer and counter/tally appear and disappear by buttons.
 
 let quizAppear = document.querySelector(".quizFrame");
+let quizBtnAppear = document.querySelector("#buttonStart");
 let tallyBoxAppear = document.querySelector(".tallyCorrect");
 let statsAppear = document.querySelector(".stats");
 let headerAppear = document.querySelector(".start");
 let infoAppear = document.querySelector(".infoBox");
 
+function showQuizBtn(){
+    quizBtnAppear.style.display = 'block';
+}
+function hideQuizBtn(){
+    quizBtnAppear.style.display = 'none';
+}
 
 function showQuiz() {
     quizAppear.style.display = 'block';
@@ -177,6 +184,7 @@ function selectAnswer(e) {
 
 function showScore(){
     hideQuiz();
+    hideQuizBtn();
     showStats();
     
     tallyBoxAppear.textContent = `You scored ${score} out of ${questionArr.length}.`};
