@@ -32,7 +32,7 @@ Everthing on the initial page should switch to display None and the following sh
 //     }
 // }, 1000);
 
-//Function to make quiz frame and timer and counter/tally
+//Function to make quiz frame and timer and counter/tally appear and disappear by buttons.
 
 var quizAppear = document.querySelector(".quizFrame");
 var tallyBoxAppear = document.querySelector(".tallyCorrect");
@@ -69,3 +69,52 @@ function hideInfo(){
     infoAppear.style.display = 'none';
     }
 
+/* array set up for questions in the quiz. The array is made up of objects containing the question and array of answer object = text:Question, correct:true or false.*/
+const questionArr = [
+    {
+        question:"Who created the Dewey Decimal Classification system?",
+        answers:[
+            {text: "John Dewey", correct: false},
+            {text: "Dewey Dessi", correct: false},
+            {text: "Melvil Dewey", correct: true},
+            {text: "Herman Melville", correct: false},
+        ]
+    },
+    {
+        question:"How many main categories/groups are there?",
+        answers:[
+            {text: "infinite", correct: false},
+            {text: "10", correct: true},
+            {text: "100", correct: false},
+            {text: "1000", correct: false},
+        ]
+    },    {
+        question:"You are looking for a book about lions. Which section would have it? ",
+        answers:[
+            {text: "the 500s", correct: true},
+            {text: "the 600s", correct: false},
+            {text: "the 700s", correct: false},
+            {text: "the 800s", correct: false},
+        ]
+    },    {
+        question:"You want to learn how to speak French. Where would you look?",
+        answers:[
+            {text: "the 100s", correct: false},
+            {text: "the 200s", correct: false},
+            {text: "the 300s", correct: false},
+            {text: "the 400s", correct: true},
+        ]
+    },    {
+        question:"The 900s section would have which title?",
+        answers:[
+            {text: "Bee the Change by B. Bumble", correct: false},
+            {text: "Whales by Blue Beluga", correct: false},
+            {text: "Ireland by Lucky Charming", correct: true},
+            {text: "Cinderella by The Brothers Grimm", correct: false},
+        ]
+    }
+]
+
+/*variables so the questions and the answers choices will appear with the next button.*/
+
+const 

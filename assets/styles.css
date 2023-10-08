@@ -43,18 +43,11 @@ header {
     font-size: 1.2em;
     border: 2px solid var(--turquoise);
     cursor: pointer;
-
     }
 
 .buttonInfo:hover {
     background-color: var(--midnight);
     color: var(--white);
-    /* width: 125px;
-    height:35px;
-    padding: 5px;
-    border-radius: 10%;
-    font-size: 1.2em;
-    border: 2px solid var(--turquoise); */
     }
 a:link, a:visited {
     background-color: var(--white);
@@ -67,7 +60,7 @@ a:hover {
     text-decoration: none;
 }
 
-button.quiz {
+.quiz {
     background-color: var(--dkblue);
     color: var(--white);
     width: 200px;
@@ -78,25 +71,16 @@ button.quiz {
     font-size: 1.2em;
     border: 2px solid var(--turquoise);
     cursor: pointer;
-    
+
     }
 .quiz:hover {
     background-color: var(--white);
     color: var(--dkblue);
-    /* width: 200px;
-    height:35px;
-    padding: 5px;
-    border-radius: 10%;
-    font-size: 1.2em;
-    border: 2px solid var(--turquoise); */
-    cursor: pointer;
     }
 
 .infoBox {
     display: block;
-    /* grid-column-start: 2;
-    grid-column-end: span 2;
-    grid-row-start: 2;  */
+
 }
 .infoTitle {
     background-color: var(--white);
@@ -129,7 +113,7 @@ button.quiz {
     display: none;
 }
 
-button.buttonStart {
+.buttonStart {
     background-color: var(--dkblue);
     color: var(--white);
     width: 200px;
@@ -145,12 +129,6 @@ button.buttonStart {
 .buttonStart:hover {
     background-color: var(--ltblue);
     color: var(--dkblue);
-    /* width: 125px;
-    height:35px;
-    padding: 5px;
-    border-radius: 10%;
-    font-size: 1.2em;
-    border: 2px solid var(--turquoise); */
     }
 
 .quizTitle {
@@ -182,7 +160,7 @@ button.buttonStart {
 }
 /* This is the style information for the questions and answers. Need to figure out how to denote the correct answer when clicked - how to turn it green. Can I connect JS to CSS */
 
-.question {
+#question {
     background-color: var(--ltblue);
     padding:15px 5px;
     color: var(--midnight);
@@ -203,27 +181,24 @@ button.buttonStart {
     height: 50px;
     margin:10px 15px;
     border-radius: 15px;
-    vertical-align: sub;
     box-shadow: 3px 3px var(--dkblue);
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
     cursor: pointer;
+    transition: all 0.3s;
 
 }
 .answerChoices:hover {
     background-color: var(--lemon);
     color: var(--midnight);
-    /* width: 500px;
-    height: 50px;
-    margin: 10px;
-    border-radius: 15px;
-    vertical-align: sub;
-    box-shadow: 2px 2px var(--dkblue); */
     cursor: pointer;
 }
 
 /* the tally of correct responses and button for next question Style. need to add positions but not sure how to do that yet */
 
 
-.nextButton {
+#nextButton {
     background-color: var(--midnight);
     color: var(--white);
     width: 150px;
@@ -236,16 +211,9 @@ button.buttonStart {
     margin:5px 0px;
     }
 
-.nextButton:hover {
+#nextButton:hover {
     background-color: var(--white);
     color: var(--midnight);
-    /* width: 125px;
-    height:35px;
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 1.2em;
-    border: 2px solid var(--turquoise);
-    cursor: pointer; */
     }
 .tallyCorrect {
     width: 300px;

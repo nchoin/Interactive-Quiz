@@ -6,18 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles.css">
 </head>
-<body class="myGrid">
+<body>
     <!-- start the quiz with a button and offer a button for information-->
     <header class="start">
-        
         <button class="buttonInfo"><a href="https://docs.google.com/presentation/d/e/2PACX-1vQDVLsZ5GXjLYOfI8kSwdE_jtaX742SK6SnYgTbyk01U9yH8r0gquwE3PB5UPb_ey62tIL9ZwdbYQN5/pub?start=false&loop=true&delayms=15000" target="_blank">Info about the DDC</a></button>
     
         <button onclick="hideInfo(); showQuiz();" class="quiz">Continue to Quiz</button> 
        
-        
     </header>
 
-    <!--Info box which will display/onclick,-->
+    <!--Info box which will display as the homepage.-->
     <section class="infoBox">
         <div class="quizTitle">Do You Know Dewey?</div>
         <div class="infoTitle">Information about this Quiz:</div>
@@ -35,22 +33,20 @@
 <!--Creating a section to contiain the quiz box which will have the Title of the quiz, the timer, the question/answer choices, a counter for correct answers and a button to navigate to next question -->
     <section class="quizFrame">
         <button class="buttonStart">Start Quiz</button>
-
-
-        <div class="quizTitle">Do You Know Dewey?</div>
+        <h1 class="quizTitle">Do You Know Dewey?</h1>
             <!-- <div class="timeInfo"></div>
                 <div class="timeLeft">Time Left</div>
                 <div class="timer"></div> -->
     
 <!--this is where the question and answer will appear-->
-        <div class="question">Question will be here</div>
-        <!--video had <div id="answerButtons">-->
-            <div class="answerChoices"> answer choices </div>
-            <div class="answerChoices">answer choices </div>
-            <div class="answerChoices">answer choices </div>
-            <div class="answerChoices"> answer choices </div>
-        <!--</div> this to create a divion for the answers. Not sure if I'll need this.-->
-        <button class="nextButton">Next question</button>
+        <h2 id="question">Question will be here</h2>
+        <div id="answerButtons">
+            <button class="answerChoices"> answer choice 1 </button>
+            <button class="answerChoices">answer choice 2 </button>
+            <button class="answerChoices">answer choice 3 </button>
+            <button class="answerChoices"> answer choice 4 </button>
+        </div> 
+        <button id="nextButton">Next question</button>
     </section>
 
 <!--This is where the counter and button for next question will go-->
