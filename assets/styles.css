@@ -175,6 +175,9 @@ a:hover {
     font-weight: bolder;
 
 }
+#answerButtons{
+    max-width: 550px;
+}
 .answerChoices {
     background-color: var(--white);
     padding:15px 5px;
