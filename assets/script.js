@@ -34,82 +34,38 @@ Everthing on the initial page should switch to display None and the following sh
 
 //Function to make quiz frame and timer and counter/tally
 
-var quizAppear = document.getElementsByClassName("quizFrame");
-var tallyBoxAppear = document.getElementsByClassName("tallyCorrect");
-var statsAppear = document.getElementsByClassName("stats");
-var headerAppear = document.getElementsByClassName("start");
-var infoAppear = document.getElementsByClassName("infoBox");
+var quizAppear = document.querySelector(".quizFrame");
+var tallyBoxAppear = document.querySelector(".tallyCorrect");
+var statsAppear = document.querySelector(".stats");
+var headerAppear = document.querySelector(".start");
+var infoAppear = document.querySelector(".infoBox");
 
-// var displaySettingStats = statsAppear.style.display;
-// var displaySettingHeader = headerAppear.style.display;
-// var displaySettingInfo = infoAppear.style.display;
 
 function showQuiz() {
-    var displaySettingQuiz = quizAppear.style.display;
-    var displaySettingTally = tallyBoxAppear.style.display;
-
-    if(displaySettingQuiz == 'none') {
-      displaySettingQuiz = 'block';
+    quizAppear.style.display = 'block';
+    tallyBoxAppear.style.display = 'block';
     }
-    if(displaySettingTally == 'none') {
-        displaySettingTally = 'block';
-    }
-}
 
 function hideQuiz() {
-    var displaySettingQuiz = quizAppear.style.display;
-    var displaySettingTally = tallyBoxAppear.style.display;
-
-    if(displaySettingQuiz =='block') {
-        displaySettingQuiz ='none';
-      }
-    if(displaySettingTally == 'block') {
-        displaySettingTally = 'none';
-      }
+    quizAppear.style.display = 'none';
+    tallyBoxAppear.style.display = 'block';
 }
 
 function showStats(){
-    var displaySettingStats = statsAppear.style.display;
-    var displaySettingTally = tallyBoxAppear.style.display;
-
-    if(displaySettingStats =='none') {
-        displaySettingStats = 'block';
-    }
-    if(displaySettingTally == 'none') {
-        displaySettingTally = 'block';
-    }
+    statsAppear.style.display = 'block';
+    tallyBoxAppear.style.display = 'block';
 }
 function hideStats(){
-    var displaySettingStats = statsAppear.style.display;
-    var displaySettingTally = tallyBoxAppear.style.display;
-
-    if(displaySettingStats =='block') {
-        displaySettingStats = 'none';
-    }
-    if(displaySettingTally == 'block') {
-        displaySettingTally = 'none';
-    }
+   statsAppear.style.display = 'none';
+   tallyBoxAppear.style.display = 'none';
 }
 function showInfo(){
-    var displaySettingHeader = headerAppear.style.display;
-    var displaySettingInfo = infoAppear.style.display;
-
-    if(displaySettingHeader =='none') {
-        displaySettingHeader ='block';
-    }
-    if(displaySettingInfo == 'none') {
-        displaySettingInfo = 'block';
-    }
+    headerAppear.style.display = 'block';
+    infoAppear.style.display = 'block';
 }
+
 function hideInfo(){
-    var displaySettingHeader = headerAppear.style.display;
-    var displaySettingInfo = infoAppear.style.display;
-
-    if(displaySettingHeader =='block') {
-        displaySettingHeader ='none';
+    headerAppear.style.display ='none';
+    infoAppear.style.display = 'none';
     }
-    if(displaySettingInfo == 'block') {
-        displaySettingInfo = 'none';
-    }
-}
 

@@ -12,7 +12,7 @@
         
         <button class="buttonInfo"><a href="https://docs.google.com/presentation/d/e/2PACX-1vQDVLsZ5GXjLYOfI8kSwdE_jtaX742SK6SnYgTbyk01U9yH8r0gquwE3PB5UPb_ey62tIL9ZwdbYQN5/pub?start=false&loop=true&delayms=15000" target="_blank">Info about the DDC</a></button>
     
-        <button onclick="hideInfo()" class="quiz">Continue to Quiz</button> 
+        <button onclick="hideInfo(); showQuiz();" class="quiz">Continue to Quiz</button> 
        
         
     </header>
@@ -44,15 +44,15 @@
     
 <!--this is where the question and answer will appear-->
         <div class="question">Question will be here</div>
-        <ul>
+        <!--video had <div id="answerButtons">-->
             <div class="answerChoices"> answer choices </div>
             <div class="answerChoices">answer choices </div>
             <div class="answerChoices">answer choices </div>
             <div class="answerChoices"> answer choices </div>
-        </ul>
+        <!--</div> this to create a divion for the answers. Not sure if I'll need this.-->
         <button class="nextButton">Next question</button>
     </section>
-    
+
 <!--This is where the counter and button for next question will go-->
     <section class="tallyCorrectDisplay">
             <div class="tallyCorrect">Correct Responses: </div>

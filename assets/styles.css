@@ -29,7 +29,7 @@ body{
 /* Styles for the begining of the quiz - information */
 header {
     padding: 5px; 
-    display: show;
+    display: block;
 }
 
 .buttonInfo {
@@ -234,7 +234,6 @@ button.buttonStart {
     border: 2px solid var(--turquoise);
     cursor:pointer;
     margin:5px 0px;
-
     }
 
 .nextButton:hover {
@@ -248,19 +247,19 @@ button.buttonStart {
     border: 2px solid var(--turquoise);
     cursor: pointer; */
     }
-    .tallyCorrect {
-        width: 300px;
-        height: 50px;
-        background-color: var(--green);
-        margin: 20px 0px;
-        border-radius: 10px;
-        font-size: 1.5em;
-        color: var(--white);
-        text-align: left;
-        padding: 10px 0px;
-        display: none;
-       
-    }
+.tallyCorrect {
+    width: 300px;
+    height: 50px;
+    background-color: var(--green);
+    margin: 20px 0px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: var(--white);
+    text-align: left;
+    padding: 10px 0px;
+    display: none;
+    
+}
 /* Styles for the end - stats from the quiz and opportunity to post to record of results */
 
 .stats {
