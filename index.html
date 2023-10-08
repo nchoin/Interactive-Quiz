@@ -11,7 +11,7 @@
     <header class="start">
         <button class="buttonInfo"><a href="https://docs.google.com/presentation/d/e/2PACX-1vQDVLsZ5GXjLYOfI8kSwdE_jtaX742SK6SnYgTbyk01U9yH8r0gquwE3PB5UPb_ey62tIL9ZwdbYQN5/pub?start=false&loop=true&delayms=15000" target="_blank">Info about the DDC</a></button>
     
-        <button onclick="hideInfo(); showQuiz();" class="quiz">Continue to Quiz</button> 
+        <button onclick="hideInfo(); showQuiz(); startQuiz();" class="quiz">Continue to Quiz</button> 
        
     </header>
 
@@ -32,7 +32,7 @@
     </section> 
 <!--Creating a section to contiain the quiz box which will have the Title of the quiz, the timer, the question/answer choices, a counter for correct answers and a button to navigate to next question -->
     <section class="quizFrame">
-        <button class="buttonStart">Start Quiz</button>
+        <button id="buttonStart">Start Quiz</button>
         <h1 class="quizTitle">Do You Know Dewey?</h1>
             <!-- <div class="timeInfo"></div>
                 <div class="timeLeft">Time Left</div>
@@ -64,11 +64,10 @@
         <br>📚Do whatever you need to "dew".📚</p>
     
     
-        <button class="redo">Try Again</button> 
+        <button class="redo" onclick="showInfo(); hideStats();">Try Again</button> 
         <button class="recordStats">Record</button> 
         
     </section>
-
 
 
     <script src="./assets/script.js"></script>

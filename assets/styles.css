@@ -14,7 +14,8 @@
     --ltblue:#DBF5F0;
     --lemon:#F1DA8E;
     --yellow: #FFF4BD;
-    --green:#18A558;
+    --green:#18a55769;
+    --crimson: rgba(220, 20, 60, 0.406);
 }
 
 body{
@@ -113,7 +114,7 @@ a:hover {
     display: none;
 }
 
-.buttonStart {
+#buttonStart {
     background-color: var(--dkblue);
     color: var(--white);
     width: 200px;
@@ -126,7 +127,7 @@ a:hover {
     margin: 30px 0px;
     font-weight: bolder;
     }
-.buttonStart:hover {
+#buttonStart:hover {
     background-color: var(--ltblue);
     color: var(--dkblue);
     }
@@ -164,8 +165,8 @@ a:hover {
     background-color: var(--ltblue);
     padding:15px 5px;
     color: var(--midnight);
-    width: 500px;
-    height: 50px;
+    width: 600px;
+    height: auto;
     margin:10px 0;
     border-radius: 15px;
     vertical-align: sub;
@@ -189,12 +190,22 @@ a:hover {
     transition: all 0.3s;
 
 }
-.answerChoices:hover {
+.answerChoices:hover:not([disabled]) {
     background-color: var(--lemon);
     color: var(--midnight);
-    cursor: pointer;
 }
 
+.answerChoices:disabled{
+    cursor:no-drop;
+}
+/* This is what happens to the answer choices when clicked to show the response is correct or incorrect. Change to var(--green) or red */
+
+.correct{
+    background-color: var(--green);
+}
+.incorrect{
+    background-color: var(--crimson);
+}
 /* the tally of correct responses and button for next question Style. need to add positions but not sure how to do that yet */
 
 
@@ -222,8 +233,9 @@ a:hover {
     margin: 20px 0px;
     border-radius: 10px;
     font-size: 1.5em;
-    color: var(--white);
-    text-align: left;
+    color: var(--midnight);
+    text-align: center;
+    font-weight: bold;
     padding: 10px 0px;
     display: none;
     

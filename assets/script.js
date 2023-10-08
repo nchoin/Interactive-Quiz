@@ -34,21 +34,21 @@ Everthing on the initial page should switch to display None and the following sh
 
 //Function to make quiz frame and timer and counter/tally appear and disappear by buttons.
 
-var quizAppear = document.querySelector(".quizFrame");
-var tallyBoxAppear = document.querySelector(".tallyCorrect");
-var statsAppear = document.querySelector(".stats");
-var headerAppear = document.querySelector(".start");
-var infoAppear = document.querySelector(".infoBox");
+let quizAppear = document.querySelector(".quizFrame");
+let tallyBoxAppear = document.querySelector(".tallyCorrect");
+let statsAppear = document.querySelector(".stats");
+let headerAppear = document.querySelector(".start");
+let infoAppear = document.querySelector(".infoBox");
 
 
 function showQuiz() {
     quizAppear.style.display = 'block';
-    tallyBoxAppear.style.display = 'block';
+    // tallyBoxAppear.style.display = 'block';
     }
 
 function hideQuiz() {
     quizAppear.style.display = 'none';
-    tallyBoxAppear.style.display = 'block';
+    // tallyBoxAppear.style.display = 'block';
 }
 
 function showStats(){
@@ -117,4 +117,87 @@ const questionArr = [
 
 /*variables so the questions and the answers choices will appear with the next button.*/
 
-const 
+const questionElement = document.getElementById('question');
+const answerButtons = document.getElementById('answerButtons');
+const nextBtn = document.getElementById('nextButton');
+// const tallyTotal = document.getElementsByClassName('tallyCorrect');
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+/*function that will begin the quiz. Will connect this function to the Start Quiz button*/
+
+function startQuiz(){
+    currentQuestionIndex = 0;
+    score = 0;
+    showQuestion();
+}
+function resetState(){
+    nextBtn.style.display = "none";
+    while(answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild)
+    }
+}
+
+
+function showQuestion(){
+    resetState();
+    let currentQuestion = questionArr[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.textContent = questionNo + ". " + currentQuestion.question;
+
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement('button');
+        button.textContent = answer.text;
+        button.classList.add("answerChoices");
+        answerButtons.appendChild(button);
+        if(answer.correct){
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
+    });
+}
+function selectAnswer(e) {
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if(isCorrect){
+        selectedBtn.classList.add("correct");
+        score++;
+    } else {
+        selectedBtn.classList.add("incorrect");
+    }
+    Array.from(answerButtons.children).forEach(button=> {
+        if(button.dataset.correct ==="true"){
+            button.classList.add('correct');
+        }
+        button.disabled = true;
+    });
+    nextBtn.style.display = "block";
+}
+
+function showScore(){
+    hideQuiz();
+    showStats();
+    
+    tallyBoxAppear.textContent = `You scored ${score} out of ${questionArr.length}.`};
+    
+
+function goToNextQuestion(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex<questionArr.length){
+        showQuestion();
+    }else {
+        showScore();
+    }
+
+}
+
+nextBtn.addEventListener("click", ()=>{
+    if(currentQuestionIndex<questionArr.length){
+        goToNextQuestion();
+    }
+})
+
+
+
+startQuiz();
