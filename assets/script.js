@@ -18,21 +18,21 @@ Everthing on the initial page should switch to display None and the following sh
 3. button to go to new page to complete the form.
 
 */
-// var i = 0;
-// var timerBox = document.querySelector('.timer');
+var i = 5;
+var timerBox = document.querySelector('.timer');
 
-// //code for the timer. Change the var i = whatever I want the timer set to - how many 1 seconds. This connects to the 1000milliseconds below.
-// var timer = setInterval.function(){
-//     timerBox.textContent=i;
-//     console.log(timerBox.textContent);
-//     i--;
-//     if(i<0){
-//         //stop countdown use the variable you created mean the setInterval method.
-//         clearInterval(timer);
-//     }
-// }, 1000);
+//code for the timer. Change the var i = whatever I want the timer set to - how many 1 seconds. This connects to the 1000milliseconds below.
+var timer = setInterval(function(){
+    timerBox.textContent=i;
+    console.log(timerBox.textContent);
+    i--;
+    if(i<0){
+        //stop countdown use the variable you created mean the setInterval method.
+        clearInterval(timer);
+    }
+}, 1000);
 
-//Function to make quiz frame and timer and counter/tally appear and disappear by buttons.
+//Function to make quiz frame and timer adisappear by buttons.
 
 let quizAppear = document.querySelector(".quizFrame");
 let quizBtnAppear = document.querySelector("#buttonStart");

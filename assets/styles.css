@@ -110,10 +110,6 @@ a:hover {
 }
 /* Styles for the beginning of the quiz page */
 
-.quizFrame {
-    display: none;
-}
-
 #buttonStart {
     background-color: var(--dkblue);
     color: var(--white);
@@ -133,6 +129,11 @@ a:hover {
     color: var(--dkblue);
     }
 
+
+.quizFrame {
+    display: none;
+}
+
 .quizTitle {
     background-color: var(--midnight);
     color: var(--white);
@@ -145,22 +146,27 @@ a:hover {
 }
 .timeLeft {
     background-color: var(--white);
-    color: var(--dkblue);
+    color: var(--midnight);
     width: 175px;
     padding: 10px;
     border-radius: 10px;
     font-weight: bolder;
+    font-size: 1.2em;
+    display: inline-flex;
 }
 
 .timer {
-    background-color: var(--midnight);
-    color: var(--white);
+    background-color: var(--ltblue);
+    color: var(--midnight);
     font-weight: bolder;
-    width: 50px;
+    font-size: 1.2em;
+    width: 75px;
     padding:5px;
+    border: 2px solid var(--dkblue);
     border-radius: 10px;
+    display: inline-flex;
 }
-/* This is the style information for the questions and answers. Need to figure out how to denote the correct answer when clicked - how to turn it green. Can I connect JS to CSS */
+/* This is the style information for the questions and answers.*/
 
 #question {
     background-color: var(--ltblue);
