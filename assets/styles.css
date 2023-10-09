@@ -72,8 +72,8 @@ a:hover {
     font-size: 1.2em;
     border: 2px solid var(--turquoise);
     cursor: pointer;
-
     }
+
 .quiz:hover {
     background-color: var(--white);
     color: var(--dkblue);
@@ -87,12 +87,10 @@ a:hover {
     background-color: var(--white);
     color: var(--midnight);
     height: 70px;
-    padding: 15px;
-    padding-left: 20px;
+    padding: 17px 0 0 20px;
     font-size: 1.6em;
     width: 700px;
     box-shadow: 5px 10px 5px var(--midnight);
-    /* border-bottom: 5px solid var(--turquoise); */
     margin: 30px 0;
     border-radius: 15px;
 }
@@ -359,3 +357,157 @@ a:hover {
     background-color: var(--midnight);
     color: var(--white);
     }
+
+@media screen and (max-width:900px){
+    .infoRules {
+        font-size: .8em;
+        width: 400px;
+        height: 30px;
+        margin-top:10px;
+
+    }
+    .infoTitle{
+        font-size: 1em;
+        width: 400px;
+        height: 30px;
+        padding: 5px 0 0 20px;
+        justify-content: center;
+    }
+    .quizTitle {
+        padding:20px;
+        font-size: 1.2em;
+        width: 400px;
+        margin-bottom: 10px;
+    }
+
+    .tallyCorrect {
+        width: 150px;
+        height: 50px;
+        margin: 20px 0px;
+        font-size: 1em;
+    }
+    .gameOverMessage{
+        width: 400px;
+        height: 150px;
+        font-size: 1em;
+    
+    }
+
+    #question {
+        padding:15px 5px;
+        width: 400px;
+        height: auto;
+        margin:10px 0;
+        font-size: 1em;
+        font-weight: bolder;
+    
+    }
+    #answerButtons{
+        max-width: 400px;
+    }
+    .answerChoices {
+        width: 300px;
+        height: 50px;
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width:400px){
+    .infoRules {
+        font-size: .4em;
+        width: 300px;
+        height: 30px;
+        margin-top:10px;
+
+    }
+    .infoTitle{
+        font-size: .8em;
+        width: 300px;
+        height: 30px;
+        padding: 5px 0 0 20px;
+        justify-content: center;
+    }
+    .quizTitle {
+        padding:20px;
+        font-size: 1.2em;
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .quiz {
+        width: 100px;
+        height:35px;
+        padding: 5px;
+        font-size: .6em;
+        }
+   
+
+    #question {
+        padding:15px 5px;
+        width: 300px;
+        height: auto;
+        margin:10px 0;
+        font-size: .8em;
+        font-weight: bolder;
+
+    }
+    #answerButtons{
+        max-width: 400px;
+    }
+    .answerChoices {
+        width: 300px;
+        height: 50px;
+        font-size: .8em;
+    }
+    #scoreTitle {
+        font-size: 1em;
+        width: 300px;
+    }
+    #statsHowTo{
+        width: 300px;
+        height: 150px;
+        margin: 30px 0px;
+        }
+    
+    .statsLabels{
+        font-size: .8em;
+    }
+
+    .fields {
+        font-size: .8em;
+        margin: 10px;
+    }
+    #postScoreBtn {
+        width: 200px;
+        height:auto;
+        font-size: .8em;
+        }
+    .redo {
+        width: 100px;
+        height:35px;
+        font-size: .6em;
+        }
+    .buttonInfo {
+        width: 100px;
+        height:35px;
+        font-size: .6em;
+    }    
+    .tallyCorrect {
+        width: 150px;
+        height: 40px;
+        margin: 20px 0px;
+        font-size: .8em;
+    }
+    .gameOverMessage{
+        width: 300px;
+        height: 125px;
+        font-size: .8em;
+    
+    }
+    .recordStats {
+        width: 100px;
+        height:35px;
+        font-size: .6em;
+    }
+        
+}
