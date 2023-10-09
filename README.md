@@ -1,10 +1,15 @@
 # Interactive-Quiz
 This is a quiz focusing on the DDC, Dewey Decimal Classification. It will include questions related to call numbers and topics in the DDC as well as the person who created the DDC system. The format includes multiple choice and true and false questions as well as a timer and score keeper.
 /*Ideas for how to make the quiz - what pieces do I need to make:
-1. I need to make a timer with a start button. My timer starts when page loads and I need it to start with button...How do I do this?
+1. I need to make a timer with a start button. My timer starts when page loads and I need it to start with button...How do I do this? Need to make incorrect answers TAKE AWAY time as a penalty.
 2. The button should trigger two events
     a. the timer to begin
-    b. the "unveiling" of the first question and answer set
+    b. the "unveiling" of the first question and answer set - already does this.✅
+
+Still need to do 1 and 2a. Also need to Clear fields when high score is submitted. 
+
+
+
 
 3. Need to create a set of questions/answers. 
     a. Was thinking I could give the Q/A a class so I could then create a variable named questionAnswerArr[]. Within this array, I would have an object {}for each "collection" of questions/options[]/correct choice.
@@ -30,8 +35,7 @@ This is a quiz focusing on the DDC, Dewey Decimal Classification. It will includ
     qa - the class for all question and answers. (would I apply to UL or li? if apply to UL would it include the li?) need to review that
     correct - for correct li choices
 
-6. Variables names I could use:
-    global  - var questionAnswerArr = [];
+
 
 Link for learning about DDC my google slide show  https://docs.google.com/presentation/d/e/2PACX-1vQDVLsZ5GXjLYOfI8kSwdE_jtaX742SK6SnYgTbyk01U9yH8r0gquwE3PB5UPb_ey62tIL9ZwdbYQN5/pub?start=false&loop=true&delayms=15000
     
