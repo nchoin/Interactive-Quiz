@@ -18,7 +18,7 @@ Everthing on the initial page should switch to display None and the following sh
 3. button to go to new page to complete the form.
 
 */
-var i = 5;
+var i = 63;
 var timerBox = document.querySelector('.timer');
 
 //code for the timer. Change the var i = whatever I want the timer set to - how many 1 seconds. This connects to the 1000milliseconds below.
@@ -29,6 +29,8 @@ var timer = setInterval(function(){
     if(i<0){
         //stop countdown use the variable you created mean the setInterval method.
         clearInterval(timer);
+        hideQuiz();
+        showStats();
     }
 }, 1000);
 
@@ -172,6 +174,7 @@ function selectAnswer(e) {
         score++;
     } else {
         selectedBtn.classList.add("incorrect");
+        i--;
     }
     Array.from(answerButtons.children).forEach(button=> {
         if(button.dataset.correct ==="true"){
