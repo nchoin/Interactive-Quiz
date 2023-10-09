@@ -11,16 +11,28 @@
     <!--Title of page and set up of fields to be recorded-->
 
 <section id="postScore">
-<h1 id="scoreTitle">🏆 Post Your Score 🏆</h1>
-<div id="statsHowTo">
-
-</div>
+    <h1 id="scoreTitle">🏆 Post Your Score 🏆</h1>
+    <div id="statsHowTo">
+        <p>     
+            <label class="statsLabels" for="initials">Initials:</label>
+            <input class="fields" type="text" placeholder="Type your Initials Here"/>
+        </p>
+        <p>
+            <label class="statsLabels" for="score">Your Score:</label>
+            <input class="fields" type="number" placeholder="Type your Score Here"/>
+        </p>
+    <!-- <button id="postScore">Click to Post Your Score</button>
+    -->
+    <button id="postScoreBtn">Click to Post Your Score</button>
+    </div>
 
 </section>
 <section id="redoAndInfo">
+    
     <button class="redo" onclick="window.location.href='https://nchoin.github.io/Interactive-Quiz/';">Try Again</button> 
     
     <button class="buttonInfo" onclick=window.location.href='https://docs.google.com/presentation/d/e/2PACX-1vQDVLsZ5GXjLYOfI8kSwdE_jtaX742SK6SnYgTbyk01U9yH8r0gquwE3PB5UPb_ey62tIL9ZwdbYQN5/pub?start=false&loop=true&delayms=15000' target="_blank">Info about the DDC</a></button>
+
 </section>
     
     <script src="/assets/highScore.js"></script>
