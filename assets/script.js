@@ -18,21 +18,7 @@ Everthing on the initial page should switch to display None and the following sh
 3. button to go to new page to complete the form.
 
 */
-var i = 63;
-var timerBox = document.querySelector('.timer');
 
-//code for the timer. Change the var i = whatever I want the timer set to - how many 1 seconds. This connects to the 1000milliseconds below.
-var timer = setInterval(function(){
-    timerBox.textContent=i;
-    console.log(timerBox.textContent);
-    i--;
-    if(i<0){
-        //stop countdown use the variable you created mean the setInterval method.
-        clearInterval(timer);
-        hideQuiz();
-        showStats();
-    }
-}, 1000);
 
 //Function to make quiz frame and timer adisappear by buttons.
 
@@ -43,8 +29,10 @@ let statsAppear = document.querySelector(".stats");
 let headerAppear = document.querySelector(".start");
 let infoAppear = document.querySelector(".infoBox");
 
+
 function showQuizBtn(){
     quizBtnAppear.style.display = 'block';
+    
 }
 function hideQuizBtn(){
     quizBtnAppear.style.display = 'none';
@@ -77,6 +65,49 @@ function hideInfo(){
     headerAppear.style.display ='none';
     infoAppear.style.display = 'none';
     }
+var i = 20;
+var timer = document.querySelector('.timer');
+function countdown() {
+    setInterval(function(){
+    if(i<0){
+        clearInterval(timer);
+        hideQuiz();
+       showStats();
+        }else {
+        timer.textContent=i;
+        console.log(timer.textContent);
+        i--;
+     }
+},1000)}
+
+
+// var i = 20;
+// var timerBox = document.querySelector('.timer');
+
+// //code for the timer. Change the var i = whatever I want the timer set to - how many 1 seconds. This connects to the 1000milliseconds below.
+// var timer = ;
+// function countdown() {
+//     if(i<0){
+//         clearInterval(timer);
+//         hideQuiz();ci
+//         showStats();
+//     }else {
+//         timerBox.textContent=i;
+//         console.log(timerBox.textContent);
+//         i--;
+//     }
+// }
+// var timer = setInterval(function(){
+//     timerBox.textContent=i;
+//     console.log(timerBox.textContent);
+//     i--;
+//     if(i<0){
+//         //stop countdown use the variable you created mean the setInterval method.
+//         clearInterval(timer);
+//         hideQuiz();
+//         showStats();
+//     }
+// }, 1000);
 
 /* array set up for questions in the quiz. The array is made up of objects containing the question and array of answer object = text:Question, correct:true or false.*/
 const questionArr = [
@@ -141,6 +172,7 @@ function startQuiz(){
     score = 0;
     showQuestion();
 }
+
 function resetState(){
     nextBtn.style.display = "none";
     while(answerButtons.firstChild){
