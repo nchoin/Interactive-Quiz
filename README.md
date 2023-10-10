@@ -1,10 +1,12 @@
 # Interactive-Quiz
-This is a quiz focusing on the DDC, Dewey Decimal Classification. It includes questions related to call numbers and topics in the DDC as well as the person who created the DDC system. The format includes multiple choice questions as well as a timer and score keeper. If the quiz taker is unfamiliar with the DDC, I've included a link to a Google SlideShow which includes information about the creator of the DDC as well as descriptons about the organization and categories. 
+This is a quiz focusing on the DDC, Dewey Decimal Classification. It includes questions related to call numbers and topics in the DDC as well as the person who created the DDC system. The format includes multiple choice questions as well as a timer and score keeper. If the quiz taker is unfamiliar with the DDC, I've included a link to a Google SlideShow which includes information about the creator of the DDC as well as descriptons about the organization and categories.   
 
 ## Description
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-As a librarian, part of the core curriculum is helping students became independent library patrons. To be independent, one must understand how the nonfiction - mostly informative text - is organized. Once a student knows the basic categories and number connections, he/she can find any topic. I wanted to create a quick quiz about the DDC so other librarians could use it with their classes.
-I learned a how to use arrays to store objects and which operate like a database for the questions. I learned how to denote the correct answers and use JS to search for the correct responses and create a score sheet. I also learned how to append the information in the array by added a class which would then change the CSS to indicate if a choice was correct or incorrect. I also learned how to use JS to change the CSS style.display. 
+As a librarian, part of the core curriculum is helping students became independent library patrons. To be independent, one must understand how the nonfiction - mostly informative text - is organized. Once a student knows the basic categories and number connections, he/she can find any topic. I wanted to create a quick quiz about the DDC so other librarians could use it with their classes.  
+
+I learned a how to use arrays to store objects and which operate like a database for the questions. I learned how to denote the correct answers and use JS to search for the correct responses and create a score sheet. I also learned how to append the information in the array by added a class which would then change the CSS to indicate if a choice was correct or incorrect. I also learned how to use JS to change the CSS style.display.  
+
 ## Table of Contents (Optional)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -23,38 +25,37 @@ On the Stats page, the information is sent to local storage. There is no leaderb
 <img width="430" alt="Quiz Post stats screen iPhone" src="https://github.com/nchoin/Interactive-Quiz/assets/139597297/193f9a4f-95ef-4a5d-a8fc-341f4b992f20">
 
 ## Credits
-Thank you to the following people who helped me think through my code, answered my questions and offered suggestions:
-UConn BootCamp Instructors:
-Lee Warrick https://github.com/mynar7 - CSS design, Solutions for issues with Timer
-Mia Ciasullo  https://github.com/miacias - JS functionality
+Thank you to the following people who helped me think through my code, answered my questions and offered suggestions:  
 
-Tutor:
-John Titus - review setInterval and Local Storage
+#### UConn BootCamp Instructors:  
 
-UConn BootCamp Classmates
-Evan Bennett - Thank you for your JS advice and suggestions.
-Sam - Thank you for debugging issues with the Timer.
+  - [Lee Warrick](https://github.com/mynar7) - CSS design, Solutions for issues with Timer
+  - [Mia Ciasullo](https://github.com/miacias) - JS functionality
+
+#### Tutor:
+  - John Titus - review setInterval and Local Storage
+
+#### UConn BootCamp Classmates
+  - Evan Bennett - Thank you for your JS advice and suggestions.
+  - Sam - Thank you for debugging issues with the Timer.
+
+#### Books
+  - McFedries, P. (2023). *HTML, CSS, & JavaScript all-in-one for dummies.* For Dummies.  
+
+  - McGrath, M. (2020). *HTML, CSS and JavaScript in easy steps (4th ed.).* In Easy Steps.  
+
+  - Meloni, J., & Kyrnin, J. (2019). *HTML, CSS, and JavaScript all in one: Covering HTML5, CSS3, and ES6, sams teach yourself (3rd ed.).* Pearson Education.  
+
+  - Miles, R. (2021). *Begin to code with JavaScript.* Addison Wesley.  
+
+Thank you to Avinash, manager of the YouTube channel named [GreatStack](https://www.youtube.com/@GreatStackDev/about) @GreatStackDev. He shared his approach to [creating a quiz](https://www.youtube.com/watch?v=PBcqGxrr9g8) .His instruction gave me the language I needed to create the quiz I envisioned. I had the pieces and he helped me put them together and execute them. I found his explanation for appending elements and the css extremely helpful in creating my quiz. His instructions and explanations were very clear, explaining the why and the how. I followed his ideas for using color (appending css styles) to indicate correct and incorrect answers as well. I followed his instruction to set up functions to extract information from the QA array to display on the screen.The tutorial I followed is listed below as well as a link the YouTube Channel.  
 
 
-Books
-  References
-McFedries, P. (2023). HTML, CSS, & JavaScript all-in-one for dummies. For Dummies.
+For the final step of the quiz, I wanted to the clear the inputs by refreshing the screen. I found this resource from [Free Code Camp](https://www.freecodecamp.org/news/javascript-refresh-page-how-to-reload-a-page-in-js/) and used the information to improve the coding.   
 
-McGrath, M. (2020). HTML, CSS and JavaScript in easy steps (4th ed.). In Easy Steps.
 
-Meloni, J., & Kyrnin, J. (2019). HTML, CSS, and JavaScript all in one: Covering HTML5, CSS3, and ES6, sams teach yourself (3rd ed.). Pearson Education.
+This is a link to my [Google Search](https://www.google.com/search?q=create+a+quiz+javascript&oq=creating+a+quiz+jav&gs_lcrp=EgZjaHJvbWUqCAgBEAAYFhgeMgYIABBFGDkyCAgBEAAYFhgeMggIAhAAGBYYHjIICAMQABgWGB4yCAgEEAAYFhgeMggIBRAAGBYYHjIICAYQABgWGB4yCAgHEAAYFhgeMgoICBAAGIYDGIoFMgoICRAAGIYDGIoF0gEIOTUxMWoxajeoAgCwAgA&sourceid=chrome&ie=UTF-8). I reviewed many of the results to find an approach that was similar to my thought process.  
 
-Miles, R. (2021). Begin to code with JavaScript. Addison Wesley.
-
-Thank you to Avinash, manager of the YouTube channel named GreatStack (@GreatStackDev). He shared his approach to creating a quiz. His instruction gave me the language I needed to create the quiz I envisioned. I had the pieces and he helped me put them together and execute them. I found his explanation for appending elements and the css extremely helpful in creating my quiz. His instructions and explanations were very clear, explaining the why and the how. I followed his ideas for using color (appending css styles) to indicate correct and incorrect answers as well. I followed his instruction to set up functions to extract information from the QA array to display on the screen.The tutorial I followed is listed below as well as a link the YouTube Channel.
-https://www.youtube.com/watch?v=PBcqGxrr9g8
-https://www.youtube.com/@GreatStackDev/about
-
-For the final step of the quiz, I wanted to the clear the inputs by refreshing the screen. I found this resource and used the information to improve the coding. 
-https://www.freecodecamp.org/news/javascript-refresh-page-how-to-reload-a-page-in-js/
-
-This is a link to my Google Search. I reviewed many of the results to find an approach that was similar to my thought process.
-https://www.google.com/search?q=create+a+quiz+javascript&oq=creating+a+quiz+jav&gs_lcrp=EgZjaHJvbWUqCAgBEAAYFhgeMgYIABBFGDkyCAgBEAAYFhgeMggIAhAAGBYYHjIICAMQABgWGB4yCAgEEAAYFhgeMggIBRAAGBYYHjIICAYQABgWGB4yCAgHEAAYFhgeMgoICBAAGIYDGIoFMgoICRAAGIYDGIoF0gEIOTUxMWoxajeoAgCwAgA&sourceid=chrome&ie=UTF-8
 
 ## License
 Please refer to the LICENSE in the repo.
@@ -62,6 +63,6 @@ Please refer to the LICENSE in the repo.
 
 
 
-Link for learning about DDC my google slide show  https://docs.google.com/presentation/d/e/2PACX-1vQDVLsZ5GXjLYOfI8kSwdE_jtaX742SK6SnYgTbyk01U9yH8r0gquwE3PB5UPb_ey62tIL9ZwdbYQN5/pub?start=false&loop=true&delayms=15000
+Link for learning about [DDC my google slide show](https://docs.google.com/presentation/d/e/2PACX-1vQDVLsZ5GXjLYOfI8kSwdE_jtaX742SK6SnYgTbyk01U9yH8r0gquwE3PB5UPb_ey62tIL9ZwdbYQN5/pub?start=false&loop=true&delayms=15000)
     
 
