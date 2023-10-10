@@ -1,22 +1,23 @@
 /*
 the homepage should show the following initially:
-1. Go to Quiz button
-2. Info about DDC
+1. Continue to Quiz button
+2. Button to go to Info about DDC
 3. Info about the quiz
 
 When I click the Continue to Quiz button Everthing on the initial page should switch to display None and the following should show up:
-1. The timer
-2. The start button
-3. the quiz frame that says The quiz Title, and default to "question will be here" "answer choice will be here"
-4. The Next Button
-5. The Box with Tally of correct responses
+1. The start button - when this is click the following should appear.
+    a. The timer
+    b. the quiz frame that says The quiz Title, and the first question and answer.
+2. The Next Button appears once an answer is selected
 
-When the timer ends:
-Everthing on the initial page should switch to display None and the following should show up:
-1. Paragraph/box that says - You finished. Record your score and your Initials. 
-2. The Box with Tally of correct responses
+When the timer ends before completing the quiz:
+Everthing on the quiz page should switch to display None and the following should show up:
+1. Paragraph/box that says - You finished. Record your score and your Initials or Redo the quiz 
+2. The Box with Tally of correct responses which is blank becuase user didn't finish quiz in alloted time
 3. button to go to new page to complete the form.
 
+When a person finishes the quiz - have the option to post score and initials. 
+After posting to local storage, the page refreshes to clear out the information in the labels.
 */
 
 
@@ -65,7 +66,7 @@ function hideInfo(){
     headerAppear.style.display ='none';
     infoAppear.style.display = 'none';
     }
-var i = 30;
+var i = 45;
 var timer = document.querySelector('.timer');
 function countdown() {
     setInterval(function(){
@@ -81,33 +82,6 @@ function countdown() {
 },1000)}
 
 
-// var i = 20;
-// var timerBox = document.querySelector('.timer');
-
-// //code for the timer. Change the var i = whatever I want the timer set to - how many 1 seconds. This connects to the 1000milliseconds below.
-// var timer = ;
-// function countdown() {
-//     if(i<0){
-//         clearInterval(timer);
-//         hideQuiz();ci
-//         showStats();
-//     }else {
-//         timerBox.textContent=i;
-//         console.log(timerBox.textContent);
-//         i--;
-//     }
-// }
-// var timer = setInterval(function(){
-//     timerBox.textContent=i;
-//     console.log(timerBox.textContent);
-//     i--;
-//     if(i<0){
-//         //stop countdown use the variable you created mean the setInterval method.
-//         clearInterval(timer);
-//         hideQuiz();
-//         showStats();
-//     }
-// }, 1000);
 
 /* array set up for questions in the quiz. The array is made up of objects containing the question and array of answer object = text:Question, correct:true or false.*/
 const questionArr = [

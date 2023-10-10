@@ -8,5 +8,7 @@ function clearLabels(){
 
 document.querySelector('#postScoreBtn').addEventListener('click',()=> {localStorage.setItem(initialsToStore.value, scoreToStore.value);
     document.getElementById('info').append("Score added🏆");  
-    location.reload();
 })
+setTimeout(function(){
+    location.reload();
+}, 5000);
