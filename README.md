@@ -37,7 +37,7 @@ Thank you to the following people who helped me think through my code, answered 
 
 #### UConn BootCamp Classmates
   - Evan Bennett - Thank you for your JS advice and suggestions.
-  - Sam - Thank you for debugging issues with the Timer.
+  - Sam Rose - Thank you for debugging issues with the Timer.
 
 #### Books
   - McFedries, P. (2023). *HTML, CSS, & JavaScript all-in-one for dummies.* For Dummies.  
