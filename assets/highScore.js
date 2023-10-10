@@ -11,4 +11,4 @@ document.querySelector('#postScoreBtn').addEventListener('click',()=> {localStor
 })
 setTimeout(function(){
     location.reload();
-}, 5000);
+}, 10000);
