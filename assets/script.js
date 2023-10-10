@@ -65,7 +65,7 @@ function hideInfo(){
     headerAppear.style.display ='none';
     infoAppear.style.display = 'none';
     }
-var i = 20;
+var i = 30;
 var timer = document.querySelector('.timer');
 function countdown() {
     setInterval(function(){
@@ -77,7 +77,7 @@ function countdown() {
         timer.textContent=i;
         console.log(timer.textContent);
         i--;
-     }
+     };
 },1000)}
 
 
