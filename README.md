@@ -36,7 +36,7 @@ Thank you to the following people who helped me think through my code, answered 
   - John Titus - review setInterval and Local Storage
 
 #### UConn BootCamp Classmates
-  - Evan Bennett - Thank you for your JS advice and suggestions.
+  - [Evan Bennett](https://github.com/Evan8383) - Thank you for your JS advice and suggestions.
   - Sam Rose - Thank you for debugging issues with the Timer.
 
 #### Books
